@@ -1,0 +1,220 @@
+
+*{
+
+    padding: 0px;
+    margin: 0px;
+}
+body{
+
+   background-image: url(../image/20.jpg); 
+  background-size: cover; 
+  height: 280vh;
+
+}
+
+.container{
+
+  margin: auto;
+  width: 80%;
+  position: relative;
+}
+
+    
+    
+.title{
+  color: palevioletred;
+  text-align: center;
+  padding: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  margin-bottom: 30px;
+  
+}
+
+  .div1{ 
+    height: 180px; 
+    width: 200px; 
+    left: 30px;
+    border-radius: 30px; 
+    -webkit-border-radius: 30px; 
+    -moz-border-radius: 30px;
+     -ms-border-radius: 30px; 
+     -o-border-radius: 30px;
+     background-color: lightblue;
+     animation-name: change;
+     animation-duration: 3s;
+     position: absolute;
+background-image: url(../image/88.jpg);
+background-size: cover;
+    
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+     
+}
+@keyframes change {
+
+  0%{ left:5px;}
+   50%{height: 220px;}
+100%{  left:1020px; }
+  
+}
+
+.div2{
+   height: 180px;
+   width: 200px;
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+   background-color: lightblue;
+   animation-name: change2;
+   animation-duration: 3s;
+   position: absolute;
+   right: 30px;
+   background-image: url(../image/a.jpg);
+   background-size: cover;
+   top:230px;
+   animation-delay: 3s;
+   animation-timing-function: linear;
+   
+   animation-fill-mode: forwards;
+}
+@keyframes change2 {
+
+0%{ right:5px;}
+50%{ height:220px;}
+100%{  right:1020px;}
+
+}
+.div2:hover{
+
+  animation-play-state: paused;
+}
+
+.div3{
+
+  height: 180px;
+  width: 200px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: lightblue;
+  animation-name: change3;
+  animation-duration: 3s;
+  position: absolute;
+  background-image: url(../image/rf.jpg);
+  background-size: cover;
+ left: 30px;
+  top:430px;
+  animation-delay:6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+}
+@keyframes change3 {
+
+  0%{ left:5px;}
+50%{width: 240px;}
+  100%{  left:1020px;
+  
+  }
+}
+
+
+.div4{
+
+  height: 180px;
+  width: 200px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: lightblue;
+  animation-name: change4;
+  animation-duration: 3s;
+  position: absolute;
+  right: 30px;
+  background-image: url(../image/66.jpg);
+background-size: cover;
+
+  top:630px;
+  animation-delay: 9s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+}
+@keyframes change4 {
+
+  0%{ right:5px;}
+ 50%{width: 240px;}
+  100%{  right:1020px;
+  }
+
+}
+
+.div5{
+
+  height: 180px;
+  width: 200px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: lightblue;
+  animation-name: change5;
+  animation-duration: 3s;
+  position: absolute;
+  background-image: url(../image/34.jpg);
+  background-size: cover;
+  left: 30px;
+  top:840px;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+}
+@keyframes change5 {
+
+  0%{ left:5px;}
+ 50%{ width: 150px;}
+  100%{  left:1020px;
+  }
+
+}
+
+.div6{
+
+  height: 180px;
+  width: 200px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: lightblue;
+  animation-name: change6;
+  animation-duration: 3s;
+  position: absolute;
+  right: 30px;
+  background-image: url(../image/6.jpg);
+  background-size: cover;
+
+  top:1050px;
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+}
+@keyframes change6 {
+
+  0%{ right:5px;}
+  50%{width: 150px;}
+  100%{ right:1020px;
+  }
+
+}

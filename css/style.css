@@ -1,0 +1,443 @@
+.container
+{
+    width: 80%;
+    margin: auto;
+}
+.list
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+.content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content img 
+{
+    flex-grow: 1;
+}
+.content nav 
+{
+    flex-grow: 3;
+    text-align: center;
+}
+.content nav ul li .ab
+{
+    position: relative;
+    display: block;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    padding: 10px 15px;
+    color: rgb(39, 62, 34);
+}
+
+.content .icons
+{
+    flex-grow: 1;
+    text-align: right;
+}
+.content ul li 
+{
+    display: inline-block;
+}
+.content ul li a
+{
+    color: black;
+}
+.content nav ul li .ab::after , .content nav ul li .ab::before
+{
+    content: "";
+    position: absolute;
+    border: 1px solid rgb(39, 62, 34);
+    left: 0;
+    top: 0;
+    transition: 1s;
+}
+.content nav ul li .ab::before
+{
+    border-width: 0 2px;
+    height: 100%; 
+    width: 95%;
+    transform: scale3d(1,0,1);
+}
+.content nav ul li .ab::after
+{
+border-width: 2px 0;
+height: 91%; 
+width: 98%;
+transform: scale3d(0,1,1);
+transform-origin: left;
+}
+.content nav ul li .ab:hover::before
+{
+    transform: scale3d(1,1,1);
+}
+.content nav ul li .ab:hover::after
+{
+    transform: scale3d(1,1,1);
+}
+.content .icons ul li 
+{
+    padding: 8px;
+    font-size: 20px;
+}
+.icons .list 
+{
+    position: relative;
+}
+.num 
+{
+    background-color: rgb(39, 62, 34);
+    width: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 76px;
+    bottom: 3px;
+}
+.dropdown
+{
+    position: relative;
+}
+.icons .list li i
+{
+    font-size: 28px;
+}
+
+.dropdown_menu
+{
+    background-color: azure;
+    display: flex;
+    position: absolute;
+    width: 450px;
+    border: 1px solid rgb(39, 62, 34);
+    padding: 12px;
+    transform: scale(0);
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+.dropdown:hover .dropdown_menu{
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown_menu ul li
+{
+  line-height: 12px;
+  margin-bottom: 6px;
+}
+
+.dropdown_menu ul 
+{
+    text-align: left;
+}
+.dropdown_menu ul li a 
+{
+    color: rgb(39, 62, 34);
+    line-height: 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: cursive;
+}
+.dropdown_menu ul li .r1
+{
+  text-decoration: dashed;
+  text-transform: lowercase;
+}
+.title
+{
+    color:rgb(39, 62, 34) ;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.title h2{
+    font-size: 30px; 
+    font-family: sans-serif;
+    font-weight: 600;
+
+}
+.line
+{
+    width: 95px;
+    height: 3px;
+    background-color: rgb(39, 62, 34);
+    margin: auto;
+    transition: 1.3s;
+}
+.section
+{
+    display: flex;
+    justify-content: space-between;
+}
+.d1 p
+{   margin-left: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.d1 .hea h3
+{    font-family: sans-serif;
+    color:rgb(39, 62, 34);
+    text-transform: capitalize;
+   font-size: 23px;
+   margin-left: 10px;
+}
+.d1
+{
+    border: 1px solid rgb(39, 62, 34);
+    border-radius: 10px;
+    position: relative;
+}
+.section
+{
+    margin-top: 30px;
+}
+.d1 img 
+{
+    border-radius: 10px;
+    
+}
+.d1 .ico i 
+{
+   
+   font-size: 20px;
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+.ico{
+    background-color: rgb(39, 62, 34);
+    width: 25px;
+    height: 25px;
+   right: 0;
+   bottom: 18px;
+   position: absolute;
+    text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+.d1:hover .ico
+{
+    visibility: visible;
+    opacity: 1;
+}
+.disc
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.disc2
+{
+    
+    height: 250px;
+    width: 630px;
+    background-color: rgb(214, 245, 237);
+    border: 1px solid gainsboro;
+}
+.item 
+{
+    width: 250px;
+   background-image: url(../images/Screenshot\ \(135\).png);
+    border: 1px solid gainsboro;
+    transition: 1.1s;
+}
+.disc1
+{
+    position: relative;
+}
+.disc1 i 
+{
+position: absolute;
+color: rgb(39, 62, 34);
+font-size: 45px;
+}
+.disc1 h2
+{   
+    padding: 10px;
+    margin-left: 46px;
+    text-transform: capitalize;
+    color: rgb(39, 62, 34);
+}
+.disc2 p
+{   
+    font-family: cursive;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.items
+{
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(39, 62, 34);
+}
+.items h3
+{
+    color: azure;
+    font-family: cursive;
+}
+.item:hover
+{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+}
+.line1
+{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.line2
+{
+    height: 2px;
+    width: 50px;
+    background-color: rgb(39, 62, 34);
+    margin-right: 10px;
+}
+.free
+{
+    display: flex;
+    
+}
+.fr
+{
+    border-right: 1px solid rgb(39, 62, 34);
+    text-align: center;
+    width: 300px;
+    margin-top: 25px;
+}
+.fr2
+{
+    
+    text-align: center;
+    width: 300px;
+    margin-top: 25px;
+}
+.fr i ,.fr2 i
+{
+    font-size: 35px;
+    color: rgb(110, 107, 105);
+    transition: .3s;
+}
+.info h3
+{
+    font-family: cursive;
+    font-size: 19px;
+
+    color: rgb(39, 62, 34);
+}
+.info p
+{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #444;
+}
+.fr i:hover , .fr2 i:hover
+{
+    transform: rotateX(360deg);
+    color: rgb(39, 62, 34);
+}
+.cl 
+{
+    display: flex;
+    justify-content: center;
+
+}
+.cl p 
+{ 
+    font-size: 22px;
+    padding: 10px;
+    font-family: cursive;
+    color:rgb(39, 62, 34) ;
+}
+.line:hover
+{
+    width: 150px;
+}
+
+.list1
+{
+    display: flex;
+    
+}
+.list1 li 
+{
+    position: relative;
+    right: 40px;
+}
+.list1 li i 
+{
+    margin-left: 5px;
+    color: yellow;
+}
+.list1 li .f1
+{
+    color: black;
+}
+.gh 
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.ad
+{   width: fit-content;
+    border: 1px solid black;
+    position: relative;
+}
+.overlay ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+}
+.overlay ul li{
+    width: 20px;
+    height: 25px;
+    
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.p-items{
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: cursive;
+    font-style: italic;
+    color: #444;
+
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    transition:0.4s;
+    transform:scalex(0);
+}
+.overlay ul li i{
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: -20px;
+  
+}
+.ad:hover .overlay{
+    transform: scalex(1);
+}
